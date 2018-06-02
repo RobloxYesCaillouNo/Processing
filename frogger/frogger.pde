@@ -9,8 +9,17 @@ background(102,10,255);
 fill(250, 102, 5);
 ellipse(x, y, 50, 50);
 Cars cars = new Cars(30,100);
+Cars cars0 = new Cars(550, 200);
+Cars cars1 = new Cars(30, 300);
+Cars cars2 = new Cars(550,420);
+Cars cars3 = new Cars(30,501);
+Cars cars4 = new Cars(30,600);
 cars.display();
-
+cars0.display();
+cars1.display();
+cars2.display();
+cars3.display();
+cars4.display();
 }
 
 void keyPressed(){
@@ -58,11 +67,13 @@ int y;
  public Cars(int x, int y){
 this.x = x;
 this.y = y;
-
 }
+void drive(){
 
+  x -= 10;
+}
 void display() {
-   print(this.x+ " ");   
+   print(this.x+ " test ");   
       this.x -= 25;
     
   fill(0,255,0);
